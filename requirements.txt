@@ -1,0 +1,1 @@
+source /home/arman/learn-devops/python/my-py-project/.venv/bin/activate

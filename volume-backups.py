@@ -18,7 +18,9 @@ def create_volume_snapshots():
         )
 
 
-schedule.every(5).day.at("01:00").do(create_volume_snapshots)
+# schedule.every(5).day.at("01:00").do(create_volume_snapshots)
+
+schedule.every(5).seconds.do(create_volume_snapshots)
 
 while True:
     schedule.run_pending()
