@@ -6,7 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 from operator import itemgetter
 
-# ...existing code...
+
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 ec2_client = boto3.client("ec2", region_name="ap-south-1")
@@ -156,4 +156,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# ...existing
